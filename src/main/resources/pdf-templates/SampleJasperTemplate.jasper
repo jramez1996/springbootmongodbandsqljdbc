@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sample" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a894078a-929b-4aae-a1d0-46485f0f8835">
+    <property name="ireport.zoom" value="1.0"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <queryString language="json">
+        <![CDATA[]]>
+    </queryString>
+    <field name="userName" class="java.lang.String">
+        <fieldDescription><![CDATA[userName]]></fieldDescription>
+    </field>
+    <field name="userEmail" class="java.lang.String">
+        <fieldDescription><![CDATA[details.email]]></fieldDescription>
+    </field>
+    <title>
+        <band height="200" splitType="Stretch">
+            <textField>
+                <reportElement uuid="3b74775b-4555-43c3-bdf2-1677145c8660" x="0" y="31" width="555" height="20"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Helvetica" size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{userName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement uuid="aa6cc7c8-2ca1-4f0f-92e2-c466083daba0" x="0" y="54" width="555" height="20"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Helvetica" size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{userEmail}]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+</jasperReport>
